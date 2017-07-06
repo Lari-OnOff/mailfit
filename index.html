@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <title>MailFit</title>
+  </head>
+  <body>
+
+    <!-- first page -->
+
+    <section class="page page-first">
+      <div class="wrapper">
+        <header class="header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" class="header__menu" onclick="document.getElementsByClassName('menu')[0].classList.remove('--hidden');">
+            <path d="M0 5h25v2h-25z M0 11h25v2h-25z M0 17h25v2h-25z"/>
+          </svg>
+          <div class="header__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+              <polygon points="16.4,11.1 0,5.3 0,29.4 3.3,30.6 3.3,10.5 16.4,15.1 29.6,10.5 29.6,30.6 32.8,29.4 32.8,5.3"/>
+              <polygon points="26.7,27.4 16.4,30.9 6.4,27.4 6.4,31.5 16.4,35 26.7,31.4"/>
+              <polygon style="opacity: 0.7" points="16.6,0 16.6,4 20.9,5.5 26.7,3.5 26.7,3.5"/>
+              <polygon style="opacity: 0.4" points="16.6,0 6.4,3.5 6.4,3.5 12.2,5.5 16.6,4"/>
+            </svg>
+            <div class="header__text">MailFit</div>
+          </div>
+        </header>
+        <div class="page-first__main">
+          <div class="page-first__title">Сервис для маркетологов и предпринимателей</div>
+          <div class="page-first__text">Шаблоны&nbsp;писем. Автоматизация&nbsp;рассылок. Регулярная&nbsp;поддержка.</div>
+        </div>
+        <form method="POST" action="" class="page-first__portfolio">
+          <div class="page-first__portfolio-inputs">
+            <input class="page-first__portfolio-input" type="text" name="name" value="" placeholder="Имя*">
+            <input class="page-first__portfolio-input" type="text" name="company" value="" placeholder="Компания*">
+            <input class="page-first__portfolio-input" type="text" name="email" value="" placeholder="Email*">
+            <input class="page-first__portfolio-input" type="text" name="phone" value="" placeholder="Телефон*">
+          </div>
+          <input class="submit-button page-first__portfolio-submit" type="submit" value="Скачать портфолио">
+          <div class="custom-checkbox page-first__portfolio-checkbox">
+            <input type="checkbox" id="cb-accept">
+            <label for="cb-accept">Согласен с политикой конфиденциальности</label>
+          </div>
+        </form>
+      </div>
+      <div class="menu --hidden">
+        <div class="wrapper">
+          <div class="menu__link"><a href="">Услуги</a></div>
+          <div class="menu__link"><a href="">Команда</a></div>
+          <div class="menu__link"><a href="">Портфолио</a></div>
+          <div class="menu__link"><a href="">Блог</a></div>
+          <div class="menu__link"><a href="">Mailfit App</a></div>
+          <div class="menu__link"><a href="">Контакты</a></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="menu__close" onclick="this.parentNode.parentNode.classList.add('--hidden');">
+            <path d="M0 0l18 18M18 0l-18 18"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- services page -->
+
+    <section class="page page-services">
+      <div class="wrapper">
+        <h1>Услуги</h1>
+        <div class="page-services__list">
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon"></div>
+            <h2 class="page-services__item-title">Аудит</h2>
+            <div class="page-services__item-text">Разберём по кусочками ваши письма: текст, дизайн, вёрстку. Найдём точки роста по статистике рассылок, дадим рекомендации по росту подписчиков.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --template"></div>
+            <h2 class="page-services__item-title">Шаблон</h2>
+            <div class="page-services__item-text">Универсальный шаблон для любого типа рассылок. Мы готовим дизайн и вёрстку типовых блоков в письме, чтобы вы готовили качественные адаптивные рассылки.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --subscribers"></div>
+            <h2 class="page-services__item-title">Сбор подписчиков</h2>
+            <div class="page-services__item-text">Собираем подписчиков через посадочную страницу, статичную форму или всплывающую форму на сайте. Настраиваем письмо и страницу подтверждения подписки, а также страницу отписки.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --welcome"></div>
+            <h2 class="page-services__item-title">Велкам-серии</h2>
+            <div class="page-services__item-text">Серия приветственных писем, направленных на знакомство подписчика с компанией и её продуктами, услугами, особенностями работы.</div>
+            <div class="page-services__item-text">Рекомендуемое количество: от 3 до 7.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --basket"></div>
+            <h2 class="page-services__item-title">Брошенная корзина</h2>
+            <div class="page-services__item-text">Серия писем о брошенной корзине / брошенном просмотре товара. Сначала мы говорим, что сохраняем товар для пользователя, затем говорим, что бронь снимается. Забота и пуш в одном флаконе.</div>
+            <div class="page-services__item-text">Рекомендуемое количество: от 1 до 2.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --order-status"></div>
+            <h2 class="page-services__item-title">Статус заказа и отзыв</h2>
+            <div class="page-services__item-text">Статусы заказа: подтверждён, отправлен, доставлен, отзыв. Можно добавлять блоки с апсейлом &ndash; знаем кейсы, когда конверсия в заказ = 1% от отправленных.</div>
+            <div class="page-services__item-text">Рекомендуемое количество: от 2 до 4.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --reactivation"></div>
+            <h2 class="page-services__item-title">Реактивация</h2>
+            <div class="page-services__item-text">Сначала отправляем тем, кто не открывал, затем, если открыл &ndash; делаем купон на скидку, затем &ndash; в случае, если человек так ничего и не открыл &ndash; сообщение об отключении рассылки.</div>
+            <div class="page-services__item-text">Рекомендуемое количество: 3.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --deliverity"></div>
+            <h2 class="page-services__item-title">Доставляемость</h2>
+            <div class="page-services__item-text">Настроим постмастеры, DKIM, SPF и DMARC записи, найдём и устраним причины попадания рассылки в спам. Проводим регулярную диагностику доставляемости.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --testing"></div>
+            <h2 class="page-services__item-title">Тестирование</h2>
+            <div class="page-services__item-text">Проводим АБ-тестирование на массовых рассылках для оптимизации показателей Open Rate, Click Rate, Conversion Rate.</div>
+            <div class="page-services__item-text">Тестируем тему, время отправки и имя отправителя, а также дизайн письма: кнопки, заголовки, изображения, расположение меню.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --promo"></div>
+            <h2 class="page-services__item-title">Промостраница</h2>
+            <div class="page-services__item-text">Презентуем продукт или услугу так, чтобы как можно больше посетителей захотели оставить свои контакты для совершить заказ.</div>
+          </div>
+
+          <div class="page-services__item">
+            <div class="page-services__item-icon --longread"></div>
+            <h2 class="page-services__item-title">Лонгрид</h2>
+            <div class="page-services__item-text">Большой и сильный текст о проблеме, актуальной для ваших клиентов. Пишем в информационном стиле, рисуем собственные иллюстрации и упаковываем этот контент в рассылку.</div>
+          </div>
+
+          <div class="page-services__item"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- order page -->
+
+    <section class="page page-order">
+      <div class="wrapper">
+        <form method="POST" action="" class="page-order__form">
+          <h1>Есть проект или задача?</h1>
+          <div class="page-order__form-inputs">
+            <input class="page-order__form-input" type="text" name="name" value="" placeholder="Ваше имя*">
+            <input class="page-order__form-input" type="text" name="phone" value="" placeholder="Телефон*">
+            <input class="page-order__form-input" type="text" name="email" value="" placeholder="Email*">
+          </div>
+          <textarea class="page-order__form-textarea" name="description" placeholder="Кратко о задаче"></textarea>
+          <div class="page-order__form-file">
+            <input type="file" name="requirements" id="fi-requirements">
+            <label for="fi-requirements">Прикрепить ТЗ</label>
+          </div>
+          <input class="submit-button page-order__form-submit" type="submit" value="Отправить заявку">
+          <div class="custom-checkbox page-order__form-checkbox">
+            <input type="checkbox" id="cb-accept-2">
+            <label for="cb-accept-2">Согласен с политикой конфиденциальности</label>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- portfolio page -->
+
+    <section class="page page-portfolio">
+      <h1>Портфолио</h1>
+      <div class="slider">
+        <div class="slider__frames-wrapper">
+          <div class="slider__frames-scroller">
+            <div class="slider__frames">
+
+              <div class="slider__frame">
+                <img class="slider__image" src="img/slider1.png" alt="Квадрим. Сервис ремонта">
+                <a class="slider__link" href="">Квадрим. Сервис ремонта</a>
+              </div>
+              <div class="slider__frame">
+                <img class="slider__image" src="img/slider2.png" alt="Сергей Мартынюк и партнёры">
+                <a class="slider__link" href="">Сергей Мартынюк и партнёры</a>
+              </div>
+              <div class="slider__frame">
+                <img class="slider__image" src="img/slider1.png" alt="Квадрим. Сервис ремонта">
+                <a class="slider__link" href="">Квадрим. Сервис ремонта</a>
+              </div>
+              <div class="slider__frame">
+                <img class="slider__image" src="img/slider2.png" alt="Сергей Мартынюк и партнёры">
+                <a class="slider__link" href="">Сергей Мартынюк и партнёры</a>
+              </div>
+              <div class="slider__frame">
+                <img class="slider__image" src="img/slider1.png" alt="Квадрим. Сервис ремонта">
+                <a class="slider__link" href="">Квадрим. Сервис ремонта</a>
+              </div>
+              <div class="slider__frame">
+                <img class="slider__image" src="img/slider2.png" alt="Сергей Мартынюк и партнёры">
+                <a class="slider__link" href="">Сергей Мартынюк и партнёры</a>
+              </div>
+              <div class="slider__frame">
+                <img class="slider__image" src="img/slider1.png" alt="Квадрим. Сервис ремонта">
+                <a class="slider__link" href="">Квадрим. Сервис ремонта</a>
+              </div>
+              <div class="slider__frame">
+                <img class="slider__image" src="img/slider2.png" alt="Сергей Мартынюк и партнёры">
+                <a class="slider__link" href="">Сергей Мартынюк и партнёры</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="slider__side --left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="106" height="194" viewBox="0 0 106 194">
+              <path class="bg" d="M0 0h52l54 97l-54 97h-52z"/>
+              <path class="arrow" d="M48 68L20 97L48 126"/>
+            </svg>
+          </div>
+          <div class="slider__side --right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="106" height="194" viewBox="0 0 106 194">
+              <path class="bg" d="M54 0h52v194h-52l-54-97z"/>
+              <path class="arrow" d="M58 68L86 97L58 126"/>
+            </svg>
+          </div>
+
+        </div>
+        <div class="slider__control">
+          <div class="slider__control-line"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" class="slider__control-track" style="left: 0">
+            <path d="M15.5 0l13.42 7.75v15.5l-13.42 7.75l-13.42-7.75v-15.5z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Yandex Map page -->
+
+    <section class="page page-map" id="yandex-map"></section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__block footer__contacts">
+          <div class="footer__caption">Задавайте вопросы:</div>
+          <div>Почта: <a href="mailto:support@mailfit.com">support@mailfit.com</a></div>
+          <div>Телеграм: <a href="tg://resolve?domain=mailfitbot">@mailfitbot</a></div>
+          <div>Facebook: <a href="http://m.me/mailfit">m.me/mailfit</a></div>
+        </div>
+        <div class="footer__block footer__news">
+          <div class="footer__caption">Подписывайтесь на новости:</div>
+          <div><a href="">В Телеграме</a></div>
+          <div><a href="">В Фейсбуке</a></div>
+          <div class="footer__margin-top">Наше <a href="">сообщество в Фейсбуке</a></div>
+        </div>
+        <div class="footer__block footer__mailing">
+          <div class="footer__caption">Полезная рассылка о дизайне писем и контент-маркетинге:</div>
+          <form method="POST" action="" class="footer__form">
+            <input type="text" name="email" value="" placeholder="Email" class="footer__form-input">
+            <input type="submit" value="Подписаться" class="footer__form-submit">
+          </form>
+          <div class="footer__policy"><a href="">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end of pages -->
+
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript">
+      Slider.initialize(document.getElementsByClassName('slider')[0]);
+
+      function windowResize()
+      {
+        var
+          menu = document.getElementsByClassName('menu')[0],
+          button = document.getElementsByClassName('header__menu')[0],
+          page = document.getElementsByClassName('page-first')[0],
+          wrapper = document.querySelector('.menu .wrapper'),
+          r = button.getBoundingClientRect(),
+          x = Math.round(r.left + r.width * 0.5).toString() + 'px',
+          y = Math.round(r.top + r.height * 0.5).toString() + 'px';
+        wrapper.style.paddingTop = ((page.getBoundingClientRect().height - 300) / 2 - 120).toString() + 'px';
+        menu.style.height = page.getBoundingClientRect().height.toString() + 'px';
+        menu.style.transformOrigin = x + ' ' + y;
+      }
+
+      window.addEventListener('resize',windowResize);
+      windowResize();
+    </script>
+  </body>
+</html>
